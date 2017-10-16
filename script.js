@@ -30,15 +30,23 @@ console.log(fido.barks);
 // Write your code below:
 
 
+class DogClass {
+  constructor(barks = true, wagstail = true){
+    this.barks = barks;
+    this.wagstail = wagstail;
+  }
+}
+
 // Create an instance of DogClass()
 // Define your variable, spike
 // Write your code below:
 
+let spike = new DogClass ();
 
-// Print spike wagstrail.
+// Print spike wagstail.
 // It should print, true.
 // Write your code below:
-
+console.log(spike.wagstail);
 
 // 3
 // EXTENDS
