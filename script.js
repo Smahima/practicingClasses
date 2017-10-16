@@ -123,7 +123,13 @@ class Trigonometry extends Geometry {
   }
 }
 
-
+// better solution:
+// class Trigonometry extends Geometry {
+//   constructor(specialCalculator) {
+//     super()
+//     this.specialCalculator = specialCalculator;
+//   }
+// }
 
 // Declare a 'trigonometry' variable, creating an instance of Trigonometry, passing in an argument of 'Ti-83'.
 // Write your code below:
@@ -142,10 +148,21 @@ console.log(trigonometry);
 // Calculus does not require a ruler, so set that property to 'false'. It does require a special calculator, the 'Ti-89'
 // Write your code below:
 
+class Calculus extends Trigonometry {
+  constructor(requiresRuler, specialCalculator) {
+    super(requiresRuler, specialCalculator);
+      this.requiresRuler = false;
+      this.specialCalculator = specialCalculator;
+  }
+}
+
+
+
 // Declare a variable of 'calculus', creating an instance of Calculus, passing in a boolean of 'false'
 // Write your code below:
-
+let calculus = new Calculus (false, 'Ti-89');
 
 // Print calculus
 // It should print: "Calculus {requiresBooks: true, requiresCalculator: true, requiresRuler: false, specialCalculator: "Ti-89"}"
 // Write your code below:
+console.log(calculus);
