@@ -91,14 +91,22 @@ console.log(math);
 // Write your code below:
 
 
+class Geometry extends Math {
+  constructor(requiresRuler = true, requiresBooks, requiresCalculator) {
+    super(requiresCalculator, requiresBooks);
+    this.requiresRuler = requiresRuler;
+  }
+}
+
+
 // Declare a 'geometry' variable, creating an instance of Geometry
 // Write your code below:
-
+let geometry = new Geometry ();
 
 // Print geometry
 // It should print: "Geometry {requiresBooks: true, requiresCalculator: true, requiresRuler: true}"
 // Write your code below:
-
+console.log(geometry);
 
 //5
 // SUB-CLASS
