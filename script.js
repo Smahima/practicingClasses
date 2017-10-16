@@ -116,16 +116,23 @@ console.log(geometry);
 // Set the value of specialCalculator equals to specialCalculator so you can pass this value when you create an instance of Trigonometry.
 // Write your code below:
 
+class Trigonometry extends Geometry {
+  constructor(specialCalculator, requiresBooks, requiresCalculator, requiresRuler) {
+    super(requiresBooks, requiresCalculator, requiresRuler);
+    this.specialCalculator = specialCalculator;
+  }
+}
+
+
 
 // Declare a 'trigonometry' variable, creating an instance of Trigonometry, passing in an argument of 'Ti-83'.
 // Write your code below:
-
+let trigonometry = new Trigonometry ("Ti-83");
 
 // Print trigonometry
 // It should pring: "Trigonometry {requiresBooks: true, requiresCalculator: true, requiresRuler: true, specialCalculator: "Ti-83"}"
 // Write your code below:
-
-
+console.log(trigonometry);
 //6
 // SUB-CLASS
 // DECLARE A SUBCLASS OF CALCULUS
