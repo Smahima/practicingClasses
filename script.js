@@ -48,12 +48,18 @@ let spike = new DogClass ();
 // Write your code below:
 console.log(spike.wagstail);
 
+
 // 3
 // EXTENDS
 // DECLARE A SUBJECT CLASS
 // It should have the property of 'requiresBooks' set to 'true'.
 // Write your code below:
 
+class Subject {
+  constructor() {
+    this.requiresBooks = true;
+  }
+}
 
 // DECLARE A SUB-CLASS MATH
 // Extend from Subject
@@ -61,15 +67,21 @@ console.log(spike.wagstail);
 // It should have an additional property of 'requiresCalculator ' set to 'true'.
 // Write your code below:
 
+class Math extends Subject {
+  constructor(requiresBooks) {
+    super(requiresBooks)
+    this.requiresCalculator = true;
+  }
+}
 
 // Declare a 'math' variable, creating an instance of Math
 // Write your code below:
-
+let math = new Math ();
 
 //Print math
 // It should print: "Math {requiresBooks: true, requiresCalculator: true}"
 // Write your code below:
-
+console.log(math);
 
 //4
 // SUB-CLASS
