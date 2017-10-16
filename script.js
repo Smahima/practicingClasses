@@ -156,7 +156,14 @@ class Calculus extends Trigonometry {
   }
 }
 
-
+// better solution:
+// class Calculus extends Trigonometry {
+//   constructor(requiresRuler, specialCalculator) {
+//     super(requiresRuler, specialCalculator)
+//     this.requiresRuler = false
+//     this.specialCalculator = specialCalculator;
+//   }
+// }
 
 // Declare a variable of 'calculus', creating an instance of Calculus, passing in a boolean of 'false'
 // Write your code below:
