@@ -5,15 +5,22 @@
 // Write a basic Dog() constructor function with the following properties set to 'true'; barks and wagstail.
 // Write your code below:
 
+function Dog () {
+  this.barks = true;
+  this.wagstail = true;
+}
 
 // Create an instance of Dog.
 // Define your variable, fido.
 // Write your code below:
 
+let fido = new Dog ();
 
 // Print fido barks. It should print true.
 // It should prin, true.
 // Write your code below:
+
+console.log(fido.barks);
 
 
 // 2
